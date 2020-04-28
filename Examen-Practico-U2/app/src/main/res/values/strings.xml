@@ -1,3 +1,15 @@
 <resources>
     <string name="app_name">Examen-Practico-U2</string>
+
+    //Pantalla principal
+    <string name="Titulo_1">PLATAFORMA I</string>
+    <string name="Titulo_2">EXAMEN PRACTICO</string>
+    <string name="Titulo_3">2DA EVALUACION PARCIAL</string>
+    <string name="Integrante1">RODRIGO REYES </string>
+    <string name="Integrante2">ANTONIO VAZQUEZ</string>
+
+    <string name="boton_1">CAPTURAR</string>
+    <string name="boton_2">MOSTRAR</string>
+    <string name="boton_3">SALIR</string>
+
 </resources>
