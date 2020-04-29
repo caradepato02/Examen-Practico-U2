@@ -13,8 +13,8 @@ import android.widget.ListView;
 import java.util.ArrayList;
 
 public class Seleccionar_imagen extends AppCompatActivity implements ListView.OnItemClickListener {
-    ListView lstVwImagenes;
-    ArrayList <Integer> arraylstIdImgenes;
+    private ListView lstVwImagenes;
+    private ArrayList<Integer> arraylstIdImgenes;
 
 
     @Override
@@ -37,15 +37,15 @@ public class Seleccionar_imagen extends AppCompatActivity implements ListView.On
     @Override
     protected void onStart() {
         super.onStart();
-        lstVwImagenes.setAdapter(new AdapterImagenes(this,R.layout.lista_imagenes, arraylstIdImgenes));
+        lstVwImagenes.setAdapter(new AdapterImagenes(this, R.layout.lista_imagenes, arraylstIdImgenes));
     }
 
     @Override
     public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
         Intent intentDatoImagen;
         intentDatoImagen = new Intent();
-        intentDatoImagen.putExtra("idImagen",arraylstIdImgenes.get(position));
-        setResult(Activity.RESULT_OK,intentDatoImagen);
+        intentDatoImagen.putExtra("idImagen", arraylstIdImgenes.get(position));
+        setResult(Activity.RESULT_OK, intentDatoImagen);
         finish();
     }
 

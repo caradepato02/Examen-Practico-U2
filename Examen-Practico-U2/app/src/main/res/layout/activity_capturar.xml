@@ -84,7 +84,8 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="70dp"
+        android:layout_gravity="bottom"
+        android:gravity="bottom"
         android:orientation="vertical">
 
         <Button
@@ -92,8 +93,8 @@
             style="@style/Widget.AppCompat.Button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/borde"
-            android:backgroundTint="#B1B1B1"
+            android:backgroundTint="#8F8F8F"
+            android:hapticFeedbackEnabled="false"
             android:text="@string/datos_boton_guardar"
             android:textStyle="bold" />
     </LinearLayout>
