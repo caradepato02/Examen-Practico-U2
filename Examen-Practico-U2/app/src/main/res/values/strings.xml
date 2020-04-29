@@ -12,4 +12,14 @@
     <string name="boton_2">MOSTRAR</string>
     <string name="boton_3">SALIR</string>
 
+    //Capturar
+    <string name="datos_titulo">DATOS</string>
+    <string name="datos_nombre">Nombre:</string>
+    <string name="datos_descripcion">Descripcion:</string>
+    <string name="datos_dir_tel">Direccion y telefono:</string>
+    <string name="datos_boton_guardar">GUARDAR</string>
+
+    //Seleccionar imagen
+    <string name="selImg_Titulo">Seleccionar imagen</string>
+
 </resources>
