@@ -21,5 +21,6 @@
 
     //Seleccionar imagen
     <string name="selImg_Titulo">Seleccionar imagen</string>
+    <string name="evaluacion">EVALUACION</string>
 
 </resources>
