@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Seleccionar_imagen"></activity>
+        <activity android:name=".Evaluar"></activity>
+        <activity android:name=".Mostrar" />
+        <activity android:name=".SeleccionarImagen" />
         <activity android:name=".Capturar" />
         <activity android:name=".MainActivity">
             <intent-filter>

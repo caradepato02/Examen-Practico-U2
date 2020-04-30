@@ -12,7 +12,7 @@ import android.widget.ListView;
 
 import java.util.ArrayList;
 
-public class Seleccionar_imagen extends AppCompatActivity implements ListView.OnItemClickListener {
+public class SeleccionarImagen extends AppCompatActivity implements ListView.OnItemClickListener {
     private ListView lstVwImagenes;
     private ArrayList<Integer> arraylstIdImgenes;
 

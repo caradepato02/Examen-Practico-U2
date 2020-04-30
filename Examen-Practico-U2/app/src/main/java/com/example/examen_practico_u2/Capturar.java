@@ -25,7 +25,7 @@ public class Capturar extends AppCompatActivity implements View.OnClickListener 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_capturar);
-        intentSelector = new Intent(this, Seleccionar_imagen.class);
+        intentSelector = new Intent(this, SeleccionarImagen.class);
 
         imgVwImagen = findViewById(R.id.capImgVwImagen);
         btnGuardar = findViewById(R.id.capBtnGuardar);
@@ -49,8 +49,8 @@ public class Capturar extends AppCompatActivity implements View.OnClickListener 
                 sNombre = editTxtNombre.getText().toString();
                 sDescripcion = editTxtDescripcion.getText().toString();
                 sDirtel = editTxtDirTel.getText().toString();
-
                 MainActivity.addRestaurante(new Resturante(idImagen,sNombre,sDescripcion,sDirtel));
+                finish();
                 break;
         }
     }

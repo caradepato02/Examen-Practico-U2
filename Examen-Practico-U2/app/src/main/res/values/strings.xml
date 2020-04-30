@@ -3,8 +3,8 @@
 
     //Pantalla principal
     <string name="Titulo_1">PLATAFORMA I</string>
-    <string name="Titulo_2">EXAMEN PRACTICO</string>
-    <string name="Titulo_3">2DA EVALUACION PARCIAL</string>
+    <string name="Titulo_2">EXAMEN PRÁCTICO</string>
+    <string name="Titulo_3">2DA EVALUACIÓN PARCIAL</string>
     <string name="Integrante1">RODRIGO REYES </string>
     <string name="Integrante2">ANTONIO VAZQUEZ</string>
 
@@ -15,11 +15,18 @@
     //Capturar
     <string name="datos_titulo">DATOS</string>
     <string name="datos_nombre">Nombre:</string>
-    <string name="datos_descripcion">Descripcion:</string>
-    <string name="datos_dir_tel">Direccion y telefono:</string>
+    <string name="datos_descripcion">Descripción:</string>
+    <string name="datos_dir_tel">Dirección y teléfono:</string>
     <string name="datos_boton_guardar">GUARDAR</string>
 
     //Seleccionar imagen
-    <string name="selImg_Titulo">Seleccionar imagen</string>
+    <string name="selImg_titulo">SELECCIONA LA IMAGEN</string>
+
+    //Mostrar
+    <string name="mostrar_titulo">SELECCIONA TU RESTAURANTE</string>
+
+    //Evaluación
+    <string name="evaluacion_titulo">EVALUACIÓN</string>
+    <string name="evaluacion_opinion">TU OPINIÓN</string>
 
 </resources>

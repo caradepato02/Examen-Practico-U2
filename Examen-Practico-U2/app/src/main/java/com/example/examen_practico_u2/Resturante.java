@@ -5,12 +5,16 @@ public class Resturante {
     private String sNombre;
     private String sDescripcion;
     private String sDireccion;
+    private float calificacion;
+    private int cantCalificaciones;
 
     public Resturante(int idImagen, String sNombre, String sDescripcion, String sDireccion) {
         this.idImagen = idImagen;
         this.sNombre = sNombre;
         this.sDescripcion = sDescripcion;
         this.sDireccion = sDireccion;
+        this.calificacion = 3;
+        this.cantCalificaciones=1;
     }
 
     public int getIdImagen() {
@@ -43,5 +47,14 @@ public class Resturante {
 
     public void setsDireccion(String sDireccion) {
         this.sDireccion = sDireccion;
+    }
+
+    public float getCalificacion() {
+        return calificacion/cantCalificaciones;
+    }
+
+    public void setCalificacion(float calificacion) {
+        cantCalificaciones++;
+        this.calificacion += calificacion;
     }
 }
