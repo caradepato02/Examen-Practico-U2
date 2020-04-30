@@ -27,6 +27,7 @@ public class AdapterImagenes extends ArrayAdapter<Integer> {
         this.objects = objects;
     }
 
+    //Aqui se pone la info que se pondra en los item de la lista
     @NonNull
     @Override
     public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
@@ -34,12 +35,10 @@ public class AdapterImagenes extends ArrayAdapter<Integer> {
             convertView = ((Activity) context).getLayoutInflater().inflate(resourse, parent, false);
         }
         ImageView imgVwimagen;
-        imgVwimagen = convertView.findViewById(R.id.listaImgVwImagen);
-        imgVwimagen.setImageResource(objects.get(position).intValue());
+        imgVwimagen = convertView.findViewById(R.id.listaImgVwImagen);//Vincula
+        imgVwimagen.setImageResource(objects.get(position).intValue());//Pone la imagen en el item de la lista correspondiente
 
         return convertView;
-
-
     }
 
 }

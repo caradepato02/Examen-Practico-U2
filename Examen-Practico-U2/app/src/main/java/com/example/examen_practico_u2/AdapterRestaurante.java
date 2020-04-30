@@ -35,19 +35,19 @@ public class AdapterRestaurante extends ArrayAdapter<Resturante> {
             convertView = ((Activity) context).getLayoutInflater().inflate(resourse, parent, false);
         }
 
-
-
         Resturante resturante = objects.get(position);
 
         CircleImageView cImgImagen;
         TextView txtVwNombre, txtVwDescripcion, txtVwDirTel;
         RatingBar raBarEstrellas;
+        //Vinculacion
         cImgImagen = convertView.findViewById(R.id.listaRestcImgImagem);
         txtVwNombre = convertView.findViewById(R.id.listaRestTxtVwNombre);
         txtVwDescripcion = convertView.findViewById(R.id.listaRestTxtVwDescripcion);
         txtVwDirTel = convertView.findViewById(R.id.listaRestTxtVwDirTel);
         raBarEstrellas = convertView.findViewById(R.id.listaRestaRaBarEstrellas);
 
+        //Se muestran los datos
         cImgImagen.setImageResource(resturante.getIdImagen());
         txtVwNombre.setText(resturante.getsNombre());
         txtVwDescripcion.setText(resturante.getsDescripcion());

@@ -22,6 +22,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         setContentView(R.layout.activity_main);
         intentCapturar = new Intent(this, Capturar.class);
         intentMostrar = new Intent(this, Mostrar.class);
+        //vinculcion
         btnCapturar = findViewById(R.id.btnCapturar);
         btnMostrar = findViewById(R.id.btnMostrar);
         btnSalir = findViewById(R.id.btnSalir);
@@ -36,20 +37,19 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
-            case R.id.btnCapturar:
-                startActivity(intentCapturar);
+            case R.id.btnCapturar://Click a boton "capturar"
+                startActivity(intentCapturar);//inicia la actividad Capturar
                 break;
-            case R.id.btnMostrar:
-                startActivity(intentMostrar);
+            case R.id.btnMostrar://Click a boton "mostrar"
+                startActivity(intentMostrar);//inicia la actividad Mostrar
                 break;
-            case R.id.btnSalir:
+            case R.id.btnSalir://Click a boton "salir"
                 finish();
                 break;
 
-
         }
     }
-
+    //metodos estaticos para mnipular la lista
     public static void addRestaurante(Resturante resta) {
         arraylstRestaurantes.add(resta);
     }

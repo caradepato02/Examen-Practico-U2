@@ -27,6 +27,7 @@ public class Capturar extends AppCompatActivity implements View.OnClickListener 
         setContentView(R.layout.activity_capturar);
         intentSelector = new Intent(this, SeleccionarImagen.class);
 
+        //Vinculacion
         imgVwImagen = findViewById(R.id.capImgVwImagen);
         btnGuardar = findViewById(R.id.capBtnGuardar);
         editTxtNombre = findViewById(R.id.capEditTxtNombre);
@@ -49,12 +50,12 @@ public class Capturar extends AppCompatActivity implements View.OnClickListener 
                 sNombre = editTxtNombre.getText().toString();
                 sDescripcion = editTxtDescripcion.getText().toString();
                 sDirtel = editTxtDirTel.getText().toString();
-                MainActivity.addRestaurante(new Resturante(idImagen,sNombre,sDescripcion,sDirtel));
-                finish();
+                MainActivity.addRestaurante(new Resturante(idImagen,sNombre,sDescripcion,sDirtel));//Agrega restaurante a la lista
+                finish();//Termina con la actividad
                 break;
         }
     }
-
+    //Recibe lo que devuelve la actividad SeleccionarImagen
     @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         super.onActivityResult(requestCode, resultCode, data);

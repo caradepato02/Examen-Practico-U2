@@ -12,7 +12,7 @@ import android.widget.ListView;
 public class Mostrar extends AppCompatActivity implements AdapterView.OnItemClickListener {
 
     private ListView lstVwListaResta;
-    private AdapterRestaurante adapterRestaurante;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,16 +25,10 @@ public class Mostrar extends AppCompatActivity implements AdapterView.OnItemClic
     @Override
     protected void onStart() {
         super.onStart();
-        adapterRestaurante = new AdapterRestaurante(this,R.layout.lista_restaurantes,MainActivity.getArraylstRestaurantes());
-        lstVwListaResta.setAdapter(adapterRestaurante);
+        lstVwListaResta.setAdapter(new AdapterRestaurante(this,R.layout.lista_restaurantes,MainActivity.getArraylstRestaurantes()));//Adaptador para mostrar la lista de restaurantes
     }
 
-    @Override
-    protected void onResume() {
-        super.onResume();
-        //adapterRestaurante.notifyDataSetChanged();
-    }
-
+    //Se activa cuando se preciona un item
     @Override
     public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
         Intent intentResta;

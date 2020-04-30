@@ -13,8 +13,8 @@ public class Resturante {
         this.sNombre = sNombre;
         this.sDescripcion = sDescripcion;
         this.sDireccion = sDireccion;
-        this.calificacion = 3;
-        this.cantCalificaciones=1;
+        this.calificacion = 3;//valor default
+        this.cantCalificaciones=1;//valor inicial
     }
 
     public int getIdImagen() {
@@ -50,7 +50,7 @@ public class Resturante {
     }
 
     public float getCalificacion() {
-        return calificacion/cantCalificaciones;
+        return calificacion/cantCalificaciones;//devuelve promedio de las calificciones
     }
 
     public void setCalificacion(float calificacion) {

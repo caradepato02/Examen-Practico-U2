@@ -25,18 +25,19 @@ public class Evaluar extends AppCompatActivity implements RatingBar.OnRatingBarC
         txtVwDirTel = findViewById(R.id.evaTxtVwDirTel);
         raBarEstrellas = findViewById(R.id.evaRaBarEstrellas);
 
-        posicion = getIntent().getIntExtra("posicion",0);
+        posicion = getIntent().getIntExtra("posicion",0);//obtiene la posicion que se paso con el extra
         resta = MainActivity.getRestaurante(posicion);//Obtiene el Restaurante seleccionado
         raBarEstrellas.setOnRatingBarChangeListener(this);
+
         //Muestra los datos
         txtVwNombre.setText(resta.getsNombre());
         txtVwDescripcion.setText(resta.getsDescripcion());
         txtVwDirTel.setText(resta.getsDireccion());
-        raBarEstrellas.setRating(0);
+        raBarEstrellas.setRating(0);//Valor default
 
 
     }
-
+    //Se activa al cambiar el valor del RatingBar
     @Override
     public void onRatingChanged(RatingBar ratingBar, float rating, boolean fromUser) {
         resta.setCalificacion(rating);
